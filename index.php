@@ -98,7 +98,7 @@ else {
 
     <?php 
 
-     $itemsperpage = 1;
+     $itemsperpage = 5;
 
      foreach (array_slice($posts, $itemsperpage*($page-1), $itemsperpage) as $post):?>
 
