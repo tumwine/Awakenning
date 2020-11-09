@@ -1,7 +1,7 @@
 <header>
         <a class="logo" href="<?php echo BASE_URL . "/index.php"; ?>">
         <div class="logo">
-            <h1 class="logo-text"><span>Tumwine</span>&nbsp;ivan</h1>
+            <h1 class="logo-text"><span>Awakening</span>&nbsp;Souls</h1>
         </div>
         </a>
         <i class="fa fa-bars menu-toggle"></i>
