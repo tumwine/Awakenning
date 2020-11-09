@@ -531,7 +531,7 @@ header .menu-toggle{
 
 .aboutus{
 	display: grid;
-    padding: 50px;
+	margin:20px; 
 }
 
 .grid-item.about-image{
@@ -862,6 +862,7 @@ text-decoration:underline;
       }
 
     @media only screen and (max-width:600px){
+
       .content .main-content .post .post-preview{
 		width:100%;
    }
@@ -934,3 +935,17 @@ text-decoration:underline;
 
 
   }
+
+
+   @media only screen and (max-width:400px){
+
+		h1, 
+		h2, 
+		h3, 
+		h4, 
+		h5, 
+		h6 {
+			font-size:30px;
+		}
+
+   	 }
