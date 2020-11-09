@@ -15,6 +15,9 @@
     <meta charset="UT-F">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--font awesome-->
+    <link rel="stylesheet" href="assets/css/fonts.css">
 
      <!--font awesome-->
     <link rel="stylesheet" href="assets/css/all.css">
