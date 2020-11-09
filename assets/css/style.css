@@ -861,6 +861,10 @@ text-decoration:underline;
       }
 
     @media only screen and (max-width:600px){
+	    
+	    header .logo{
+	margin-left:02px;
+   }
       .content .main-content .post .post-preview{
 		width:100%;
    }
