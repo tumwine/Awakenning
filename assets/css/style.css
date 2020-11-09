@@ -14,7 +14,7 @@ body{
 .pagination
 {
    text-align:center;
-   margin-bottom:20px;	
+   margin-bottom:10px;
 }
 
 .pagination a {
@@ -857,14 +857,11 @@ text-decoration:underline;
 		 .sub-form{
 		  width:60%;
 			
-		} 
+		}        
+
       }
 
     @media only screen and (max-width:600px){
-	    
-	    header .logo{
-	margin-left:02px;
-   }
       .content .main-content .post .post-preview{
 		width:100%;
    }
