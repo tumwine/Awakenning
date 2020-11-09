@@ -857,7 +857,12 @@ text-decoration:underline;
 		 .sub-form{
 		  width:60%;
 			
-		}        
+		} 
+	
+		.pagination
+	{
+	   margin-bottom:0px;	
+	}
 
       }
 
