@@ -1,19 +1,11 @@
+<?php
+ini_set("SMTP", "aspmx.l.google.com");
+ini_set("sendmail_from", "YOURMAIL@gmail.com");
 
-          <?php 
+$message = "The mail message was sent with the following mail setting:\r\nSMTP = aspmx.l.google.com\r\nsmtp_port = 25\r\nsendmail_from = YourMail@address.com";
 
-                $to = 'tumwineivan20@gmail.com';
-                $subject = "Contact from Awakenning";
-                $message = "message";
-                $headers = "From: ivan20@gmail.com";
+$headers = "From: YOURMAIL@gmail.com";
 
-                if (mail($to, $subject, $message,$headers))
-                {
-                  echo "message sent succefully";
-                }
-
-                else {
-                  echo "message not sent";
-                }
-
-
-          ?>
+mail("Sending@provider.com", "Testing", $message, $headers);
+echo "Check your email now....&lt;BR/>";
+?>
