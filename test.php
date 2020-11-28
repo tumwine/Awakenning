@@ -1,3 +1,5 @@
+<?php
+
 // Pear Mail Library
 require_once "Mail.php";
 
@@ -29,3 +31,5 @@ if (PEAR::isError($mail)) {
 } else {
     echo '<p>Message successfully sent!</p>';
 }
+
+?>
