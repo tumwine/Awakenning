@@ -1,11 +1,31 @@
-<?php
-ini_set("SMTP", "aspmx.l.google.com");
-ini_set("sendmail_from", "tumwineivan20@gmail.com");
+// Pear Mail Library
+require_once "Mail.php";
 
-$message = "The mail message was sent with the following mail setting:\r\nSMTP = aspmx.l.google.com\r\nsmtp_port = 25\r\nsendmail_from = YourMail@address.com";
+$from = '<your@gmail.com>'; //change this to your email address
+$to = '<tumwineivan20@gmail.com>'; // change to address
+$subject = 'Insert subject here'; // subject of mail
+$body = "Hello world! this is the content of the email"; //content of mail
 
-$headers = "From: tumwineivan20@gmail.com";
+$headers = array(
+    'From' => $from,
+    'To' => $to,
+    'Subject' => $subject
+);
 
-mail("tumwineivan20@gmail.com", "Testing", $message, $headers);
-echo "Check your email now....&lt;BR/>";
-?>
+$smtp = Mail::factory('smtp', array(
+        'host' => 'ssl://smtp.gmail.com',
+        'port' => '465',
+        'auth' => true,
+        'username' => 'tumwineivan20@gmail.com', //your gmail account
+        'password' => 'snip' // your password
+    ));
+
+// Send the mail
+$mail = $smtp->send($to, $headers, $body);
+
+//check mail sent or not
+if (PEAR::isError($mail)) {
+    echo '<p>'.$mail->getMessage().'</p>';
+} else {
+    echo '<p>Message successfully sent!</p>';
+}
